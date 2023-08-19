@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(20.0), // Set the desired border radius
                   child: Image.asset(
-                    'assets/space.jpg', // Replace with the path to your image file
+                    'assets/maker.jpg', // Replace with the path to your image file
                     fit: BoxFit.cover,
                   ),
                 ),
@@ -47,7 +47,7 @@ class MyApp extends StatelessWidget {
                     ),
                     const SizedBox(height: 16),
                     Text(
-                      'Managing conflicts and saving your time is the goal of this app',
+                      'Timetable app enabling easy class searches by day, teacher, time slots, and availability for students, teachers, and management.',
                       textAlign: TextAlign.center,
                     ),
                     const SizedBox(height: 32),

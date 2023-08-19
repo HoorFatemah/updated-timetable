@@ -1,6 +1,7 @@
 //import 'package:admin_view/screens/fifth_screen.dart';
 //import 'package:admin_view/screens/uploadfile.dart';
 import 'package:flutter/material.dart';
+import 'package:student_view/screens/addteacher.dart';
 import 'package:student_view/screens/fifth_screen.dart';
 import 'package:student_view/screens/uploadfile.dart';
 import 'package:syncfusion_flutter_calendar/calendar.dart';
@@ -26,7 +27,7 @@ class _MyAppState extends State<Admins2> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Student'),
+        title: Text('Admin'),
         actions: [
           IconButton(
             onPressed: () {
@@ -65,9 +66,9 @@ class _MyAppState extends State<Admins2> {
           Align(
             alignment: Alignment.centerLeft,
             child: Text(
-              '           Hoor,',
+              '           Admin',
               style: TextStyle(
-                fontSize: 20,
+                fontSize: 30,
                 fontWeight: FontWeight.bold,
               ),
             ),
@@ -99,7 +100,7 @@ class _MyAppState extends State<Admins2> {
                           onTap: () {
           Navigator.push(
             context,
-            MaterialPageRoute(builder: (context) => myApp()),
+            MaterialPageRoute(builder: (context) => TeacherListWidget()),
           );
         },
  
@@ -121,7 +122,7 @@ class _MyAppState extends State<Admins2> {
                         ),
                     SizedBox(height: 6),
                             Text(
-                              'Daywise',
+                              'Teacherwise',
                               style: TextStyle(
                                 color: Colors.black,
                                 fontSize: 12,
@@ -136,7 +137,7 @@ class _MyAppState extends State<Admins2> {
        onTap: () {
           Navigator.push(
             context,
-            MaterialPageRoute(builder: (context) => newapp()),
+            MaterialPageRoute(builder: (context) => addteacher()),
           );
         },
                 child: Card(
@@ -152,12 +153,12 @@ class _MyAppState extends State<Admins2> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Image.asset(
-                          'assets/weekwise.jpg',
+                          'assets/classwise.jpg',
                           height: 75, // Adjust the height as needed
                         ),
                       SizedBox(height: 6),
                             Text(
-                              'Weekwise',
+                              'Add Necessary',
                               style: TextStyle(
                                 color: Colors.black,
                                 fontSize: 12,
@@ -168,6 +169,8 @@ class _MyAppState extends State<Admins2> {
                   ),
                 ),
               ),
+
+              
               InkWell(
         onTap: () {
         Navigator.push(
@@ -204,6 +207,8 @@ class _MyAppState extends State<Admins2> {
                   ),
                 ),
               ),
+
+     
             ],
           ),
         ],
